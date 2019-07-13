@@ -1,219 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Head tag -->
 <head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <!--Description-->
-  
-
-  <!--Author-->
-  
-  <meta name="author" content="John Doe">
-  
-
-  <!--Open Graph Title-->
-  
-      <meta property="og:title" content="Hexo">
-  
-  <!--Open Graph Description-->
-  
-  <!--Open Graph Site Name-->
-  <meta property="og:site_name" content="Hexo">
-  <!--Type page-->
-  
-      <meta property="og:type" content="website">
-  
-  <!--Page Cover-->
-  
-
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <!-- Title -->
-  
-  <title>Archives - Hexo</title>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
 
-  <!-- Custom CSS/Sass -->
-  <link rel="stylesheet" href="/css/style.css">
+<title>Archives | Hexo</title>
 
-  <!----------------------------
-  https://github.com/GallenHu/hexo-theme-Daily
 
- _____            _   _
-|  __ \          (_) | |
-| |  | |   __ _   _  | |  _   _
-| |  | |  / _` | | | | | | | | |
-| |__| | | (_| | | | | | | |_| |
-|_____/   \__,_| |_| |_|  \__, |
-                          __/ |
-                         |___/
 
-    --------------------------->
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
 
 </head>
-
-
 <body>
-
-  <!-- Nav -->
-  <header class="site-header">
-  <div class="header-inside">
-    <div class="logo">
-      <a href="/" rel="home">
-        
-        <img src="https://hexo.io/logo.svg" alt="Hexo" height="60">
-        
-      </a>
-    </div>
-    <!-- Navigation -->
+    <div class="wrapper">
+        <header>
     <nav class="navbar">
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse">
-        <ul class="navbar-nav">
-          
-          
-            <li>
-              <a href="/.">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Lifei Chen&#39;s Personal Webpage</a></div>
+            <div class="menu navbar-right">
                 
-                  home
+                    <a class="menu-item" href="/About">About</a>
                 
-              </a>
-            </li>
-          
-            <li>
-              <a href="/archives">
+                    <a class="menu-item" href="/Research">Research</a>
                 
-                  archive
+                    <a class="menu-item" href="/Interests">Interests</a>
                 
-              </a>
-            </li>
-          
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
+                    <a class="menu-item" href="/CV">Resume</a>
+                
+                    <a class="menu-item" href="/Contact">Contact</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
     </nav>
-    <div class="button-wrap">
-      <button class="menu-toggle">Primary Menu</button>
-    </div>
-  </div>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Lifei Chen&#39;s Personal Webpage</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/About">About</a>
+                
+                    <a class="menu-item" href="/Research">Research</a>
+                
+                    <a class="menu-item" href="/Interests">Interests</a>
+                
+                    <a class="menu-item" href="/CV">Resume</a>
+                
+                    <a class="menu-item" href="/Contact">Contact</a>
+                
+            </div>
+        </div>
+    </nav>
+
 </header>
-
-
-  <!-- Main Content -->
-  
-
-<!-- Main Content -->
-<div class="archive content-area">
-  <div class="container">
-    <h1 class="entry-title">Archives</h1>
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <!-- Use lodash to classify posts. See https://lodash.com/docs#groupBy
-          1. group site.posts by year
-          2. sort posts-in-one-year by Month and Day
-        -->
-        
-
-        
-          <h2 class="year">2019</h2>
-          <ul class="list">
-            
-  <li>
-    <span class="date">
-      2019-07-13
-    </span>
-    <a href="/2019/07/13/resume/" class="title">
-      Untitled
-    </a>
-  </li>
-
-  <li>
-    <span class="date">
-      2019-07-13
-    </span>
-    <a href="/2019/07/13/hello-world/" class="title">
-      Hello World
-    </a>
-  </li>
-
-
-          </ul>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-
-  <!-- Footer -->
-  <!-- Footer-widgets -->
-<div class="footer-widgets">
-  <div class="row inside-wrapper">
-    <div class="col-1-3">
-      <aside>
-        <h1 class="widget-title">about me</h1>
-        <div class="custom-widget-content">
-          
-          <p>Researcher</p>
-        </div>
-      </aside>
-    </div>
-    <div class="col-1-3">
-      <aside>
-        <h1 class="widget-title">Contact</h1>
-        <div class="widget-text">
-          
-            
-              <a href="https://github.com/lifeic2" class="icon icon-github" target="_blank">github</a>
-            
-              <a href="mailto:lifeichen0522@gmail.com" class="icon icon-mail" target="_blank">mail</a>
-            
-              <a href="https://www.linkedin.com/in/lifeic2" class="icon icon-linkedin" target="_blank">linkedin</a>
-            
-          
-        </div>
-      </aside>
-    </div>
-    <div class="col-1-3">
-      <aside>
-        <h1 class="widget-title">Search</h1>
-        <div class="widget-text">
-          <form onSubmit="return appDaily.submitSearch('')">
-            <p>
-              <input type="text" placeholder="search..." id="homeSearchInput">
-            </p>
-            <!-- <input type="submit" value="GO"> -->
-          </form>
-        </div>
-      </aside>
-    </div>
-  </div>
-</div>
-<!-- Footer -->
-<footer class="site-info">
-  <p>
-    <span>Hexo &copy; 2019</span>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="post-wrap archive">
     
-      <span class="split">|</span>
-      <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
     
-  </p>
+        
+
+        
+            <h3>2019</h3>
+        
+
+        <article class="archive-item">
+            <a class="archive-item-link" href="/2019/07/13/resume/">Resume</a>
+            <span class="archive-item-date">July 13, 2019</span>
+        </article>
+    
+        
+
+        
+
+        <article class="archive-item">
+            <a class="archive-item-link" href="/2019/07/13/hello-world/">Hello World</a>
+            <span class="archive-item-date">July 13, 2019</span>
+        </article>
+    
+    
+</div>
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© John Doe | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
 </footer>
 
-
-  <!-- After footer scripts -->
-  <!-- scripts -->
-<script src="/js/app.js"></script>
-
-
-
-
-
+    </div>
 </body>
-
 </html>

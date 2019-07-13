@@ -1,133 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Head tag -->
 <head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <!--Description-->
-  
-
-  <!--Author-->
-  
-  <meta name="author" content="John Doe">
-  
-
-  <!--Open Graph Title-->
-  
-      <meta property="og:title" content="Hello World">
-  
-  <!--Open Graph Description-->
-  
-  <!--Open Graph Site Name-->
-  <meta property="og:site_name" content="Hexo">
-  <!--Type page-->
-  
-      <meta property="og:type" content="article">
-  
-  <!--Page Cover-->
-  
-
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <!-- Title -->
-  
-  <title>Hello World - Hexo</title>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
 
-  <!-- Custom CSS/Sass -->
-  <link rel="stylesheet" href="/css/style.css">
+<title>Hello World | Hexo</title>
 
-  <!----------------------------
-  https://github.com/GallenHu/hexo-theme-Daily
 
- _____            _   _
-|  __ \          (_) | |
-| |  | |   __ _   _  | |  _   _
-| |  | |  / _` | | | | | | | | |
-| |__| | | (_| | | | | | | |_| |
-|_____/   \__,_| |_| |_|  \__, |
-                          __/ |
-                         |___/
 
-    --------------------------->
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
 
 </head>
-
-
 <body>
-
-  <!-- Nav -->
-  <header class="site-header">
-  <div class="header-inside">
-    <div class="logo">
-      <a href="/" rel="home">
-        
-        <img src="https://hexo.io/logo.svg" alt="Hexo" height="60">
-        
-      </a>
-    </div>
-    <!-- Navigation -->
+    <div class="wrapper">
+        <header>
     <nav class="navbar">
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse">
-        <ul class="navbar-nav">
-          
-          
-            <li>
-              <a href="/.">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Lifei Chen&#39;s Personal Webpage</a></div>
+            <div class="menu navbar-right">
                 
-                  home
+                    <a class="menu-item" href="/About">About</a>
                 
-              </a>
-            </li>
-          
-            <li>
-              <a href="/archives">
+                    <a class="menu-item" href="/Research">Research</a>
                 
-                  archive
+                    <a class="menu-item" href="/Interests">Interests</a>
                 
-              </a>
-            </li>
-          
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </nav>
-    <div class="button-wrap">
-      <button class="menu-toggle">Primary Menu</button>
-    </div>
-  </div>
-</header>
+                    <a class="menu-item" href="/CV">Resume</a>
+                
+                    <a class="menu-item" href="/Contact">Contact</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
 
-
-  <!-- Main Content -->
-  <div class="content-area">
-  <div class="post">
-    <!-- Post Content -->
-    <div class="container">
-      <article>
-        <!-- Title date & tags -->
-        <div class="post-header">
-          <h1 class="entry-title">
-            Hello World
-            
-          </h1>
-          <p class="posted-on">
-          2019-07-13
-          </p>
-          <div class="tags-links">
-            
-              
-            
-          </div>
         </div>
-        <!-- Post Main Content -->
-        <div class="entry-content has_line_number">
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Lifei Chen&#39;s Personal Webpage</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/About">About</a>
+                
+                    <a class="menu-item" href="/Research">Research</a>
+                
+                    <a class="menu-item" href="/Interests">Interests</a>
+                
+                    <a class="menu-item" href="/CV">Resume</a>
+                
+                    <a class="menu-item" href="/Contact">Contact</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Hello World</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">John Doe</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">July 13, 2019&nbsp;&nbsp;11:26:45</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
@@ -142,97 +206,67 @@
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
         </div>
-      </article>
-    </div>
-    <!-- Comments -->
-    <div class="container">
-      
-<section id="comment">
-  <!-- <h1 class="title">Comments</h1> -->
 
-  
-</section>
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>John Doe</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://yoursite.com/2019/07/13/hello-world/">http://yoursite.com/2019/07/13/hello-world/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY<strong>?</strong></strong></span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2019/07/13/resume/">Resume</a>
+            
+            
+        </section>
 
 
-    </div>
-    <!-- Pre or Next -->
-    <div class="nav-links">
-      
-        <div class="nav-previous">
-          <a href="/2019/07/13/resume/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> Older Posts</a>
-        </div>
-      
-      
-    </div>
-
-  </div>
+    </article>
 </div>
 
-
-  <!-- Footer -->
-  <!-- Footer-widgets -->
-<div class="footer-widgets">
-  <div class="row inside-wrapper">
-    <div class="col-1-3">
-      <aside>
-        <h1 class="widget-title">about me</h1>
-        <div class="custom-widget-content">
-          
-          <p>Researcher</p>
         </div>
-      </aside>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© John Doe | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
     </div>
-    <div class="col-1-3">
-      <aside>
-        <h1 class="widget-title">Contact</h1>
-        <div class="widget-text">
-          
-            
-              <a href="https://github.com/lifeic2" class="icon icon-github" target="_blank">github</a>
-            
-              <a href="mailto:lifeichen0522@gmail.com" class="icon icon-mail" target="_blank">mail</a>
-            
-              <a href="https://www.linkedin.com/in/lifeic2" class="icon icon-linkedin" target="_blank">linkedin</a>
-            
-          
-        </div>
-      </aside>
-    </div>
-    <div class="col-1-3">
-      <aside>
-        <h1 class="widget-title">Search</h1>
-        <div class="widget-text">
-          <form onSubmit="return appDaily.submitSearch('')">
-            <p>
-              <input type="text" placeholder="search..." id="homeSearchInput">
-            </p>
-            <!-- <input type="submit" value="GO"> -->
-          </form>
-        </div>
-      </aside>
-    </div>
-  </div>
-</div>
-<!-- Footer -->
-<footer class="site-info">
-  <p>
-    <span>Hexo &copy; 2019</span>
-    
-      <span class="split">|</span>
-      <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
-    
-  </p>
 </footer>
 
-
-  <!-- After footer scripts -->
-  <!-- scripts -->
-<script src="/js/app.js"></script>
-
-
-
-
-
+    </div>
 </body>
-
 </html>
