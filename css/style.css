@@ -755,7 +755,7 @@ Footer
     display: block; }
     .logo a img {
       display: block;
-      height: 60px; }
+      height: 20px; }
 
 .navbar {
   float: right;
@@ -771,6 +771,7 @@ Footer
     float: left;
     margin-left: 20px; }
     .navbar ul li a {
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
       text-decoration: none;
       line-height: 1.5; }
       .navbar ul li a:hover {
@@ -1094,7 +1095,7 @@ pre {
 
 @media screen and (max-width: 767px) {
   .logo a img {
-    height: 36px; }
+    height: 18px; }
   .site-content {
     min-height: auto; }
     .site-content .content-area {
