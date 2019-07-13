@@ -691,6 +691,8 @@ Footer
     background-image: url("../images/weibo.svg"); }
   .icon.icon-mail {
     background-image: url("../images/mail.svg"); }
+  .icon.icon-linkedin {
+    background-image: url("../images/linkedin.svg"); }
   .icon.icon-twitter {
     background-image: url("../images/twitter.svg"); }
   .icon:hover {
