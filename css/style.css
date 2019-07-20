@@ -800,7 +800,7 @@ Footer
     color: #3a3a3a;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
+    font-family: "Futura LT W01 Heavy";
     font-size: 0.750em; }
   .post .nav-links .meta-arraw {
     opacity: 0.8; }
@@ -840,7 +840,7 @@ Footer
     border-bottom-width: 1px; }
 
 .entry-content {
-  font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
+  font-family: "Futura LT W01 Heavy";
   line-height: 1.7;
   word-wrap: break-word; }
   .entry-content ol,
